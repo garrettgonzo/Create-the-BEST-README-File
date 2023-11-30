@@ -5,7 +5,7 @@ const generateMarkdown = require("./utils/generateMarkdown")
 // TODO: Include packages needed for this application
 // TODO: Create an array of questions for user input
 // const questions = ['Name?'];
-const mediaArray = ["MIT", "GNU", "APACHE"];
+const mediaArray = ["Apache", "Boost", "BSD", "Creative Commons", "Eclipse", "GNU", "The Organization for Ethical Source", "IBM", "ISC", "MIT", "Mozilla", "Open Data Commons", "Perl", "SIL", "Unlicense", "WTFPL", "Zlib"];
 const questions = [
   {
     type: 'input',
@@ -15,7 +15,7 @@ const questions = [
   {
     name: 'discription',
     type: 'input',
-    message: "Provide a short description explaining the what, why, and how of your project.",
+    message: "Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide: \n - What was your motivation? \n - Why did you build this project? \n - What problem does it solve? \n - What did you learn?",
   },
   {
     name: 'tableOfContents',
@@ -52,7 +52,12 @@ const questions = [
   {
     name: 'questions',
     type: 'input',
-    message: "Any contact information?",
+    message: "Please enter your GitHub user name.",
+  },
+  {
+    name: 'email',
+    type: 'input',
+    message: "Please enter your email address."
   },
   // {
   //   name: "fav_media",
@@ -66,8 +71,8 @@ inquirer.prompt(questions).then(answers => {
   console.log(`Created ${answers.name}!`);
   // console.log(answers.discription);
   const markDown = generateMarkdown(answers)
-  console.log(markDown)
-  fs.writeFile(path.join(__dirname, "README.md"), `# ${answers.name} \n\n## ${answers.discription} \n\n## ${answers.tableOfContents} \n\n## ${answers.installation} \n\n## ${answers.usage} \n\n## ${answers.license} \n\n## ${answers.contributing} \n\n## ${answers.tests} \n\n## ${answers.questions}`, function(err){
+  // console.log(markDown)
+  fs.writeFile(path.join(__dirname, "README.md"), `${markDown}`, function(err){
       if(err) throw err
       // console.log(answers.name);
     //   console.log("sucess")
@@ -79,17 +84,18 @@ inquirer.prompt(questions).then(answers => {
 function writeToFile(fileName, data) {}
 
 // TODO: Create a function to initialize app
-function init() {}
+// function init() {}
 
-// Function call to initialize app
-init();
+// // Function call to initialize app
+// init();
 
 
 
-// function add (a,b){
-//   return a+b
-// }
 
-// var someNum = 55
+// // function add (a,b){
+// //   return a+b
+// // }
 
-// add(someNum,2)
+// // var someNum = 55
+
+// // add(someNum,2)
