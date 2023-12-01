@@ -59,69 +59,14 @@ function generateMarkdown(data) {
   
   ## Table of Contents
   #### [Description](#description)
-  #### [Description](#description)
-  #### [Description](#description)
-  #### [Description](#description)
+  #### [Installation](#installation)
+  #### [Usage](#usage)
+  #### [License](#license)
+  #### [Contributing](#contributing)
+  #### [Tests](#tests)
   #### [Questions](#questions)
   
-## description
-#### Flashing lights (lights, lights)
-\nFlashing lights (lights, lights)
-\nFlashing lights (lights, lights)
-\nFlashing lights (lights, lights)
-\nFlashing lights (lights, lights)
-\nShe don't believe in shooting stars
-\nBut she believe in shoes and cars
-\nWood floors in the new apartment
-\nCouture from the store's department
-\nYou more like "love to start shit"
-\nI'm more of the, trips to Florida
-\nOrdered the hors d'oeuvres, views of the water
-\nStraight from the page of your favorite author
-\nAnd the weather so breezy
-\nMan, why can't life always be this easy
-\nShe in the mirror dancing so sleazy
-\nI get a call like, "Where are you Yeezy?"
-\nAnd try to hit you with the ol-wu-wopte
-\n'Til I got flashed by the paparazzi
-\nDamn, these niggas got me
-\nI hate these niggas more than a Nazi
-\nAs I recall, I know you love to show off
-\nBut I never thought that you would take it this far
-\nBut what do I know?
-\nFlashing lights (lights, light)
-\nWhat do I know?
-\nFlashing lights (lights, lights)
-\nI know it's been a while, sweetheart
-\nWe hardly talk, I was doing my thing
-\nI know I was foul, baby
-\nAyy, babe, lately, you've been all on my brain
-\nAnd if somebody would've told me a month ago
-\nFronting though, yo, I wouldn't wanna know
-\nIf somebody would've told me a year ago
-\nIt'll go get this difficult
-\nFeeling like Katrina with no FEMA
-\nLike Martin with no Gina
-\nLike a flight with no Visa
-\nFirst class with the seat back, I still see ya
-\nIn my past, you on the other side of the glass
-\nOf my memory's museum
-\nI'm just saying, hey, Mona Lisa
-\nCome home, you know you can't roam without Caesar
-\nAs I recall, I know you love to show off
-\nBut I never thought that you would take it this far
-\nBut what do I know?
-\nFlashing lights (lights, lights)
-\nWhat do I know?
-\nFlashing lights (lights, lights)
-\nAs you recall, you know I love to show off
-\nBut you never thought that I would take it this far
-\nBut what do you know?
-\nFlashing lights (lights, lights)
-\nWhat do you know?
-\nFlashing lights (lights, lights)
-\nFlashing lights (lights, lights)
-\nFlashing lights
+## Description
 ${data.discription}
 
 ## Installation
@@ -131,7 +76,7 @@ ${data.installation}
 ${data.usage}
 
 ## License
-This project is licenced under the ${data.license} license
+This project is licenced under the ${data.license} license.
 
 ## Contributing
 ${data.contributing}
@@ -139,7 +84,7 @@ ${data.contributing}
 ## Tests
 ${data.tests}
 
-## questions
+## Questions
 My GitHub Profile: https://github.com/${data.questions}
 \nMy Email: ${data.email}
 
