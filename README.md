@@ -30,4 +30,4 @@ WHEN I created an orginized video on how it all works
 
 ## Walkthrough Video
 
-<video src="./assets/video/README Walkthrough Video.mp4" controls title="README Walkthrough Video Garrett Gonzales UCI Code Bootcamp"></video>
+[![Video](<./assets/images/Screenshot (1170).jpg>)](https://www.youtube.com/watch?v=_4P9iIY-pA0)
